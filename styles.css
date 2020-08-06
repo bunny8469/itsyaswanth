@@ -63,7 +63,7 @@ body{
     margin:10%;
 }
 .head{
-    font-family:;
+    font-family:poppins;
     font-weight:bolder;
     font-size:175%;
     margin:10%;
@@ -76,7 +76,7 @@ body{
     animation-duration:0.6s;
 }
 .intro{
-    font-family:"roboto ";
+    font-family:"roboto mono";
     font-weight:bolder;
     font-size:150%;
     margin-left:10%;
