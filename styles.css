@@ -35,7 +35,7 @@ body{
     height:8vh;
     background:white;
     border-radius:50%;
-    background-size:contain;
+    background-size:cover;
     position:absolute;
     top:3rem;
     right:4.5rem;
