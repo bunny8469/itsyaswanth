@@ -5,8 +5,12 @@
         <meta charset = "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <link rel = "stylesheet" href = "styles.css">
+        <script src="https://kit.fontawesome.com/08157550c3.js" crossorigin="anonymous"></script>
     </head>
     <body>
+         
+        <i class="fas fa-moon" onclick = "nightMode()"></i>
+
         <div class = "back-card card"></div>
         <div class = "card">
             <p class = "bg-image">     
@@ -65,6 +69,28 @@ function moreText(){
         para.innerHTML = `Hey! This is <b>Yaswanth</b>. Meet this amazing guy. He is a <i>Coder</i>. He is a <i>Gamer</i>. He is really known for his chess skills - <i>Chess Master</i>. He is tech savvy. He was born on <b>August 5, 2006</b>. Top of all, he is a good child, a good friend, and the best brother. <br><u>Happy Birthday once again</u>
         `
         slideShow.style.display = "none"   
+    }
+}
+var darkMode = false;
+
+function nightMode(){
+    if(!darkMode){
+        document.querySelector(".fa-moon").style.color = "white"
+        document.querySelector(".fa-moon").style.background = "#222"
+        document.body.style.background = "#111"
+        document.querySelector("#main-card").style.background = "#222"
+        document.querySelector(".head").style.color ="white"
+        document.querySelector(".para").style.color = "white"
+        darkMode = true
+    }
+    else if(darkMode){
+        document.querySelector(".fa-moon").style.color = "black"
+        document.querySelector(".fa-moon").style.background = "#eee"
+        document.body.style.background = "#fff"
+        document.querySelector("#main-card").style.background = "#fff"
+        document.querySelector(".head").style.color = "black"
+        document.querySelector(".para").style.color = "black"
+        darkMode = false
     }
 }
             alert("☆ Designed especially for Tablets\n☆ Works well in mobile devices also\n☆ Looks weird in a computer")
