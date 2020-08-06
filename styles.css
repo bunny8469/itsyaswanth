@@ -15,6 +15,9 @@ body{
     border-radius:50%;
     background-color:#eee;
     display:flex;
+    padding:5px;
+    text-align: center; 
+    vertical-align: center; 
     justify-content:center;
     align-items:center;
     float:right;
@@ -87,7 +90,7 @@ body{
 }
 .intro::after{
     content:"Yash.";
-    color:#680ec5;
+    color:#a450ed;
     font-family:"roboto mono";
     animation-name:changeText;
     animation-timing-function:linear;
