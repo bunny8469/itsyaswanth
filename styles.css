@@ -60,7 +60,7 @@ body{
     animation-name:blink;
     animation-iteration-count:1;
     animation-direction:alternate-reverse;
-    letter-spacing:2px;
+    letter-spacing:1px;
     animation-timing-function:linear;
     animation-duration:0.6s;
 }
