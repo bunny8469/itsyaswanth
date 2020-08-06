@@ -11,10 +11,7 @@ body{
 
 .fa-moon{
     padding:10px;
-    min-width:40px;
-    min-height:40px;
     border-radius:50%;
-    font-size:120%;
     background-color:#eee;
     text-align: center;
     float:right;
