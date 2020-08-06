@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>It's Yaswanth</title>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    </head>
+    <body>
+        <div class = "back-card card"></div>
+        <div class = "card">
+            <p class = "bg-image">     
+                <img src = "https://mayoorschoolofmusic.com/wp-content/uploads/2015/11/user_circle_1048392.png" class = "image" alt = "profile-photo">
+            </p>
+            <div class = "head">HELLO!</div>
+            <div class = "intro">I<span>'</span>m </div>
+            <div class = "para">
+                
+             </div>
+            <div class = "slideshow-container">
+                <div class = "slides" id = "slide1">
+                    <div class = "shade"> </div>
+                    <p class = "caption-text">Pro at Gaming</p>
+                </div>
+                <div class = "slides" id = "slide2">
+                    <div class = "shade"> </div>
+                    <p class = "caption-text">Chess Master</p>
+                </div>
+                <div class = "slides" id = "slide3">
+                    <div class = "shade"> </div>
+                    <p class = "caption-text">Tech Enthusiast</p>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            var slideIndex = 1;
+            var slide = setInterval(slide, 3000)
+            var slides = document.getElementsByClassName("slides")
+            function slide(){
+                if(slideIndex == 3){
+                    slideIndex = 0
+                }
+                slideIndex++
+                for(var i of slides){
+                    i.style.display = "none"
+                    i.className = "slides"
+                }
+                var activeSlide = "slide"+slideIndex
+                document.getElementById(activeSlide).className = "slides fade"
+                document.getElementById(activeSlide).style.display = "block"
+            }
+            
+            
+            var para = document.querySelector(".para")
+var slideShow = document.querySelector(".slideshow-container")
+if(window.innerWidth <= 480){
+    para.innerHTML = `
+    Hey! This is <b>Yaswanth</b>. Meet this amazing guy. He is a <i>Coder</i>. He is a <i>Gamer</i>. He is really known for his <span onclick = "moreText()" class = "more">more</span>
+    `
+}
+
+function moreText(){
+    if(window.innerWidth <= 480){
+        para.innerHTML = `Hey! This is <b>Yaswanth</b>. Meet this amazing guy. He is a <i>Coder</i>. He is a <i>Gamer</i>. He is really known for his chess skills - <i>Chess Master</i>. He is tech savvy. He was born on <b>August 5, 2006</b>. Top of all, he is a good child, a good friend, the best brother for me. <u>Happy Birthday once again</u>
+        `
+        slideShow.style.display = "none"   
+    }
+}
+        </script>    
+     </body>
+</html>
