@@ -73,9 +73,6 @@ body{
     margin-top:-5%;
     color:lightgreen;
 }
-span{
-    color:bl;
-}
 .intro::after{
     content:"Yash.";
     color:#680ec5;
