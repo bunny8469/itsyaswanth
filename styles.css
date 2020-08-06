@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Lato&family=Poppins&family=Prompt&family=Roboto+Mono&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+}
+
+:root{
+  --main-bg-color:linear-gradient(#680ec5,#a450ed);
+}
+
+.card{
+    background-color:white;
+    width:80%;
+    height:70%;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    position:absolute;
+    top:50%;
+    left:50%;
+    background:white;
+    transform:translate(-50%,-50%);
+    z-index:2;
+    overflow:scroll;
+}
+.back-card{
+    z-index:1;
+    border:none;
+    transform:translate(-52.5%,-52.3%);
+    background:var(--main-bg-color);
+}
+.image{
+    width:8vh;
+    z-index:2;
+    height:8vh;
+    background:white;
+    border-radius:50%;
+    position:absolute;
+    top:3rem;
+    right:4.5rem;
+}
+.bg-image{
+    background:var(--main-bg-color);
+    border-radius:0 0 0 100%;
+    width:45%;
+    height:30%;
+    float:right;
+    margin-top:0;
+}
+.para{
+    font-family:"prompt";
+    margin:10%;
+}
+.head{
+    font-family:arial;
+    font-weight:bolder;
+    font-size:175%;
+    margin:10%;
+    margin-top:20%;
+    animation-name:blink;
+    animation-iteration-count:1;
+    animation-direction:alternate-reverse;
+    animation-timing-function:linear;
+    animation-duration:0.6s;
+}
+.intro{
+    font-family:"sans serif";
+    font-weight:bolder;
+    font-size:150%;
+    margin-left:10%;
+    margin-top:-5%;
+    color:Lightgreen;
+}
+span{
+    color:lightblue;
+}
+.intro::after{
+    content:"Yash.";
+    color:#680ec5;
+    font-family:"roboto mono";
+    animation-name:changeText;
+    animation-timing-function:linear;
+    animation-duration:5s;
+    animation-iteration-count:infinite;
+}
+.slideshow-container{
+    overflow:hidden;
+    height:20vh;
+    width:55vw;
+    position:absolute;
+    bottom:10%;
+    left:50%;
+    transform:translate(-50%,0%);
+}
+.slides{
+    height:20vh;
+    width:55vw;
+    border:1px solid black;
+    background: url("https://gamespot1.cbsistatic.com/uploads/original/gamespot/images/2009/315/reviews/1075340-951942_20091112_003.jpg");
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+#slide2{
+    background:url(https://images.chesscomfiles.com/uploads/v1/article/22594.7a2c2908.668x375o.77c7f8236274@2x.jpeg);
+    background-size:100%;
+}
+#slide3{
+    background:url(https://image.freepik.com/free-photo/businessman-using-tech-devices-icons-thin-line-interface_117023-904.jpg);
+    background-size:100%;
+}
+
+.shade{
+    width:100%;
+    height:100%;
+    z-index:2;
+    background-color:#000;
+    opacity:0.4;
+}
+.caption-text{
+    color:white;
+    font-family:"electrolize";
+    font-size:140%;
+    font-weight:bolder;
+    opacity:1;
+    margin-top:-25%;
+    margin-left:50%;
+    transform:translate(-35%,-25%);
+    z-index:5;
+    letter-spacing:1px;
+}
+.fade{
+    animation-name:fade;
+    animation-duration:3s;
+    animation-iteration-count:1;
+    animation-timing-function:ease-in;
+    animation-direction:reverse;
+}
+
+.more{
+    color:#999;
+    text-decoration:underline;
+}
+
+@keyframes fade{
+    0%{
+        opacity:1;
+    }  
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity:0.3;
+    }
+} 
+
+@keyframes changeText{
+    10%{
+        opacity:0.7;
+    }
+    20%{
+        content:"Yaswanth.";
+        opacity:1;
+    }
+    30%{
+        opacity:0.7;
+    }
+    40%{
+        content:"a Coder.";
+        opacity:1;
+    }
+    50%{
+        opacity:0.7;
+    }  
+    60%{
+        content:"a Gamer.";
+        opacity:1;
+    }  
+    70%{
+        opacity:0.7;
+    }
+    80%{
+        content:"a Chess Master.";
+        opacity:1;
+    }
+    90%{
+        opacity:0.7;
+    }
+    100%{
+        content:"Yash.";
+    }
+}
+
+@keyframes blink{
+    0%{
+        opacity:1;
+    }
+    100%{
+        opacity:0.3;
+    }
+}
+
+@media (max-width:500px){
+    .card{
+        height:80%;
+    }
+    .head{
+        font-size:140%;
+    }
+    .intro{
+        font-size:110%;
+        width:auto;
+    }
+    .bg-image{
+        height:25%;
+        width:40%;
+    }
+    .image{
+        height:3rem;
+        right:10%;
+        top:5%;
+        width:3rem;
+    }
+    .para{
+        font-size:90%;
+    }
+    .caption-text{
+        font-size:90%;
+        width:100%;
+    }
+    .shade{
+        opacity:0.2;
+    }
+}
