@@ -71,10 +71,10 @@ body{
     font-size:150%;
     margin-left:10%;
     margin-top:-5%;
-    color:green;
+    color:lightgreen;
 }
 span{
-    color:b;
+    color:black;
 }
 .intro::after{
     content:"Yash.";
