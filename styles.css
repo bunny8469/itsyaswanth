@@ -76,7 +76,7 @@ body{
     animation-duration:0.6s;
 }
 .intro{
-    font-family:"roboto mono";
+    font-family:"poppins";
     font-weight:bolder;
     font-size:150%;
     margin-left:10%;
@@ -86,7 +86,7 @@ body{
 .intro::after{
     content:"Yash.";
     color:#a450ed;
-    font-family:"roboto mono";
+    font-family:"poppins";
     animation-name:changeText;
     animation-timing-function:linear;
     animation-duration:5s;
